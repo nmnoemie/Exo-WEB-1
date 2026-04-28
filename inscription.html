@@ -1,66 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Site de réservation</title>
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-           <body>
+    <h1>LE PREMIER PAS VERS LA LIGNE D'ARRIVEE SE FAIT ICI!</h1>
+    <h2>Formulaire d'inscription </h2>
+     <form action="#" method="POST">
 
-            <form action="#" method="POST">
+    <label for ="nom">Nom complet:</label>
+        <input
+            type="text"
+            id="nom"
+            name="nom"
+            required>
 
-            <label for ="nom">Nom complet:</label>
-                <input
-                type="text"
-                id="nom"
-                name="nom"
-                required>
+    <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            nom="email"
+            placeholder="example@gmail.com"
+            required>
+    <label for="password">Password:</label>
+        <input
+            type="password"
+            id="password"
+            nom="password"
+            minlength="8"
+            maxlength="50"
+            required>
 
-                 <label for="email">Email:</label>
-                    <input
-                    type="email"
-                    id="email"
-                    nom="email"
-                    placeholder="example@gmail.com"
-                    required>
-                <label for="password">Password:</label>
-                    <input
-                    type="password"
-                    id="password"
-                    nom="password"
-                    minlength="8"
-                    maxlength="50"
-                    required>
+    <label for="date de naissance">Date de naissance:</label>
+        <input
+            type="date"
+            id="date"
+            nom="date"
+            max="2007-12-31"
+            required>
 
-                <label for="date de naissance">Date de naissance:</label>
-                <input
-                type="date"
-                id="date"
-                nom="date"
-                max="2007-12-31"
-                required>
-
-                <label for="telephone">Téléphone:</label>
-                <input
-                type="tel"
-                id="tel"
-                nom="tel"
-                pattern="[0-9]{10}"
-                required>
-               <label for="niveau">Niveau d'études:</label>
-                <select
-                id="niveau"
-                nom="niveau"
-                required>
-                <option value="">--Choisir--</option>
-                <option value="bac">Bac</option>
-                <option value="bac2">Bac+2</option>
-                <option value="bac3">Bac+3</option>
-                <option value="bac5">Bac+5 ou plus</option> 
-                </select>
-                <fieldset>
+    <label for="telephone">Téléphone:</label>
+        <input
+            type="tel"
+            id="tel"
+            nom="tel"
+            pattern="[0-9]{10}"
+            required>
+    <label for="course">Choix de course:</label>
+        <select
+            id="course"
+            nom="course"
+            required>
+    <option value="">~Choisir une course~-</option>
+    <option value="coursemarathon">Marathon</option>
+    <option value="course10km">10km</option>
+        </select>
+            <fieldset>
                     <legend>Comment as tu connu l'évènement?</legend>
                     <input type="radio" id="src-social"
                     name="source" value="social" required>
@@ -74,7 +72,7 @@
                     name="source" value="email">
                     <label for="src-email">Email</label>
                 </fieldset>
-                
+
                 <label for="motivation">Pourquoi t'inscris-tu?</label>
                     <textarea
                     id="motivation"
@@ -82,6 +80,15 @@
                     rows="4"
                     maxlength="300"
                     placeholder="Décris en quelques phrases..."></textarea>
-            </form> 
+
+                    <input type="checkbox"
+                    id=""cgu
+                    name="cgu"
+                    required>
+                    <label for="cgu">
+                        J'accepte les conditions d'utilisation
+                    </label>
+                    <button type="submit">M'inscrire</button>
+                </form> 
 </body>
 

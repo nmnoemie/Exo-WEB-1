@@ -1,0 +1,81 @@
+body{
+      background-image: url(https://images.unsplash.com/photo-1502904550040-7534597429ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y291cnNlfGVufDB8fDB8fHww);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    padding: 150px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    margin-left:10px;
+    border: 3px solid rgb(32, 29, 29)
+
+
+}
+
+ h1 {
+    color: #000;
+    font-size: 5em;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 4px 3px rgb(226, 68, 68);
+    letter-spacing: 2px;
+    height: 100px;
+    
+    
+}   
+
+#nom{
+
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#email{
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+#password{
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+
+#date de naissane{
+border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#telephone{
+border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80px;
+  height: 80px;
+}
+#course{
+border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#motivation{
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+  height: 50px;
+}
+
