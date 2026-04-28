@@ -8,7 +8,7 @@
 </head>
 <body>
            <body>
-            
+
             <form action="#" method="POST">
 
             <label for ="nom">Nom complet:</label>
@@ -62,9 +62,26 @@
                 </select>
                 <fieldset>
                     <legend>Comment as tu connu l'évènement?</legend>
-                    <input typr="radio" id ="src"
+                    <input type="radio" id="src-social"
+                    name="source" value="social" required>
+                    <label for="src-social">Réseaux social</label>
+
+                    <input type="radio" id="src-bouche"
+                    name="source" value="bouche">
+                    <label for="src-source">Bouche à oreille</label>
+
+                    <input type="radio" id="src-email"
+                    name="source" value="email">
+                    <label for="src-email">Email</label>
                 </fieldset>
+                
+                <label for="motivation">Pourquoi t'inscris-tu?</label>
+                    <textarea
+                    id="motivation"
+                    name="motivation"
+                    rows="4"
+                    maxlength="300"
+                    placeholder="Décris en quelques phrases..."></textarea>
             </form> 
 </body>
-
 
